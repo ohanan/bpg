@@ -1,8 +1,7 @@
 syntax = "proto3";
-option go_package = "github.com/ohanan/bpg/pkg/proto/bpg";
-package bpg;
+option go_package = "github.com/ohanan/bpg/pkg/proto/bot";
+package bot;
 import "common.proto";
-
-service Bpg {
+service Bot {
     rpc SayHello(common.HelloRequest) returns (common.HelloReply) {}
 }
